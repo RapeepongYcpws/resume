@@ -1,88 +1,228 @@
-html{
-    margin: 0 !important;
-    padding: 0 !important;
+* {
+  font-family: Roboto !important;
 }
-.body-wrapper{
-    background-color: #413e41;
-    margin: 10px 0;
+html {
+  margin: 0 !important;
+  padding: 0 !important;
 }
-.header-wrapper{
-    padding: 70px 0px;
+:root {
+  --tcolor: #f7d459;
 }
-.header-tab{
-    background-color: #f7d459;
-    color: #413e41;
-    position: relative;
-    height: 160px;
+.body-wrapper {
+  background-color: #413e41;
+  margin: 10px 0;
 }
-.header-tab .name,.header-tab .career{
-    padding: 0px 45px 0px 240px;
+.body-wrapper .header-wrapper {
+  padding: 60px 0px;
 }
-.header-tab .name{
-    font-weight: 500;
-    font-size: 3em;
+.header-tab {
+  background-color: var(--tcolor);
+  color: #413e41;
+  position: relative;
+  height: 160px;
 }
-.header-tab .career{
-    font-weight: 400;
-    font-size: 3em;
+.header-tab .name,
+.header-tab .career {
+  padding: 0px 45px 0px 240px;
+  font-size: 2.5rem;
+}
+.header-tab .name {
+  font-weight: 500;
+}
+.header-tab .career {
+  font-weight: 400;
 }
 
-.image-profile-wrapper{
-    background-color: white;
-    padding: 5px;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    z-index: 999;
+.image-profile-wrapper {
+  background-color: white;
+  padding: 5px;
+  width: 27vw;
+  height: 27vw;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  z-index: 999;
+  position: absolute;
+  left: -45px;
+  top: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px var(--tcolor);
+}
+.image-profile {
+  width: 25vw;
+  height: 25vw;
+  max-width: 230px;
+  max-height: 230px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: solid 4px var(--tcolor);
+  z-index: 999;
+}
+.left-column .header-title-wrapper {
+  padding: 10px 0;
+  padding-right: 45px;
+}
+.left-column .header-title {
+  border: solid 8px var(--tcolor);
+  padding: 6px;
+  border-left: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.left-column .body-title {
+  padding: 4px 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.left-column .body-title span.title {
+  color: white;
+}
+.left-column .body-title span.data {
+  color: var(--tcolor);
+  padding-right: 10px;
+}
+.left-column .icon-header {
+  width: 16px;
+  margin-right: 10px;
+}
+.left-column .body-title.contact-info span {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.left-column .body-title.skills .skill-badge-item {
+  display: inline;
+  border-radius: 30px;
+  padding: 5px 12px;
+  font-size: 1rem;
+  margin-right: 7px;
+}
+.skill-badge-item.angular {
+  background-color: #dd2627;
+}
+.skill-badge-item.vuejs {
+  background-color: #49b383;
+}
+.skill-badge-item.react {
+  background-color: #66ccec;
+}
+.skill-badge-item.jquery {
+  background-color: #066aaf;
+}
+.skill-badge-item.bootstrap {
+  background-color: #6d52a2;
+}
+.skill-badge-item.nodejs {
+  background-color: #91c53f;
+}
+.skill-badge-item.springboot {
+  background-color: #6cb345;
+}
+.skill-badge-item.mysql {
+  background-color: #e48d25;
+}
+.skill-badge-item.postgresql {
+  background-color: #306193;
+}
+.skill-badge-item.flutter {
+  background-color: #5cc3f0;
+}
+.skill-badge-item.aws {
+  background-color: #232f3f;
+}
+.skill-badge-item.git {
+  background-color: #ef5231;
+}
+.left-column .body-title.hobbies .hobbies-item-wrapper {
+  position: relative;
+}
+.left-column .body-title.hobbies .hobbies-item-wrapper .hobbies-image-wrapper {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.left-column
+  .body-title.hobbies
+  .hobbies-item-wrapper
+  .hobbies-image-wrapper
+  img {
+  height: 35px;
+  width: 35px;
+}
+.left-column .body-title.hobbies .hobbies-item-wrapper .hobbies-title {
+  background-color: white;
+  color: #232f3f;
+  margin-left: 25px;
+  padding-left: 20px;
+  padding-right: 12px;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .header-tab {
+    height: 80px;
+  }
+  .body-wrapper .header-wrapper {
+    padding: 30px 0px;
+  }
+  .header-tab .name,
+  .header-tab .career {
+    padding: 0px 45px 0px 120px;
+    font-size: 1.2rem;
+  }
+  .image-profile-wrapper {
+    width: 120px;
+    height: 120px;
+    left: -15px;
+    top: -20px;
+    border: solid 2px var(--tcolor);
+  }
+  .image-profile {
+    width: 110px;
+    height: 110px;
+    border: solid 2px var(--tcolor);
+  }
+  .left-column .header-title-wrapper {
+    padding: 0;
+  }
+  .left-column .header-title {
+    border: none;
+    padding: 0px;
+  }
+  .left-column .body-title {
+    margin: 0 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1.2px rgba(255, 255, 255, 0.603);
+  }
+  .left-column .body-title:last-child {
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header-tab .career::after {
     position: absolute;
-    left: -45px;
-    top: -45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:solid 4px #f7d459;
-}
-.image-profile{
-    width:230px;
-    height:230px;
-    border-radius: 50%;
-    pointer-events: none;
-    border:solid 4px #f7d459;
-    z-index: 999;
-}
-
-@media screen and (min-width:1400px) {
-   
-    .header-tab .career::after{
-        position: absolute;
-        bottom: 35px;
-        right: 60px;
-        width: 340px;
-        height: 5px;
-        background-color: #413e41;
-        z-index: 500;
-        content: '';
-    }
-}
-
-@media screen and (max-width:992px) {
-    /* .image-profile-wrapper{
-        width: 125px;
-        height: 125px;
-    }
-    .image-profile{
-        width:110px;
-        height:110px;
-    }
-    .header-tab .name,.header-tab .career{
-        padding: 0px 45px 0px 140px;
-    }
-    .header-tab .name{
-        font-weight: 500;
-        font-size: 1em;
-    }
-    .header-tab .career{
-        font-weight: 400;
-        font-size: 1em;
-    }  */
+    bottom: 35px;
+    right: 60px;
+    width: 340px;
+    height: 5px;
+    background-color: #413e41;
+    z-index: 500;
+    content: "";
+  }
+  .header-tab .name {
+    font-size: 3em;
+  }
+  .header-tab .career {
+    font-size: 3em;
+  }
 }
