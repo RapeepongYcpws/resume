@@ -172,6 +172,88 @@ body {
   height: 30px;
   font-size: 1rem;
 }
+.right-column .border-right-column {
+  height: 40px;
+  background-color: #f4f5f7;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+}
+.right-column .header-right-column-wrapper .header-image {
+  background-color: #413e41;
+  height: 40px;
+  padding: 0 20px;
+  display: inline-block;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.right-column .header-right-column-wrapper .header-right-column-title {
+  background-color: #f4f5f7;
+  /* background-color: red; */
+  height: 40px;
+  font-size: 1.4rem;
+  position: relative;
+}
+.right-column .header-right-column-wrapper .header-right-column-title span {
+  position: absolute;
+  top: -8px;
+}
+.right-column .header-right-column-wrapper .header-right-column-title::after {
+  content: "";
+  position: absolute;
+  bottom: 18.5px;
+  left: 0;
+  width: 95%;
+  height: 2px;
+  background-color: #413e41;
+}
+.right-column .header-image img {
+  width: 30px;
+}
+.right-column .header-image img.education {
+  width: 38px;
+}
+.right-column .body-right-column-wrapper {
+  background-color: #f4f5f7;
+  padding: 8px 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.right-column .body-right-column-wrapper:last-child {
+  border-bottom-left-radius: 0;
+}
+.right-column .body-right-column-wrapper.profile {
+  font-size: 1.2rem;
+}
+.right-column .body-right-column-wrapper.education {
+  font-size: 1rem;
+}
+.right-column .body-right-column-wrapper.education .text-year,
+.right-column .body-right-column-wrapper.work-experience .text-year {
+  font-size: 0.8rem;
+}
+.right-column .body-right-column-wrapper.education .text-school {
+  font-size: 0.7rem;
+}
+.right-column .body-right-column-wrapper.education .text-degree,
+.right-column .body-right-column-wrapper.work-experience .text-company {
+  font-size: 1rem;
+}
+.right-column .body-right-column-wrapper.education .text-gpa,
+/* .right-column .body-right-column-wrapper.work-experience .text-job-info, */
+.right-column .body-right-column-wrapper.work-experience .text-position {
+  font-size: 0.8rem;
+}
+.right-column .body-right-column-wrapper.work-experience .text-job-info {
+  font-size: 0.9rem;
+}
+.right-column .body-right-column-wrapper.work-experience .text-job-info {
+  margin-top: 3px;
+}
 @media screen and (max-width: 992px) {
   .header-tab {
     height: 80px;
