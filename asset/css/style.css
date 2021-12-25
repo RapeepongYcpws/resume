@@ -1,6 +1,10 @@
 * {
   font-family: Roboto !important;
 }
+@font-face {
+    font-family: MyFont;
+    src: url(../font/Roboto-Medium.ttf);
+  }
 html {
   margin: 0 !important;
   padding: 0 !important;
