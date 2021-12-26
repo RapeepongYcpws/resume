@@ -10,6 +10,15 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+body {
+  background: linear-gradient(
+    322deg,
+    rgba(143, 143, 143, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 :root {
   --tcolor: #f7d459;
 }
@@ -193,10 +202,10 @@ body {
 }
 .right-column .header-right-column-wrapper .header-right-column-title {
   background-color: #f4f5f7;
-  /* background-color: red; */
   height: 40px;
   font-size: 1.4rem;
   position: relative;
+  border: none;
 }
 .right-column .header-right-column-wrapper .header-right-column-title span {
   position: absolute;
