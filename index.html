@@ -17,7 +17,7 @@
 </head>
 
 <body id="bg">
-    <div class="container-xl-fluid container-xxl body-wrapper  px-0">
+    <div class="container-xxl body-wrapper px-0">
         <!-- --HEADER-- -->
         <div class="row d-flex justify-content-end header-wrapper g-0">
             <div class="col-11 col-lg-10 position-relative">
@@ -31,7 +31,7 @@
                                 Rapeepong Yoochaipatvasin
                             </span>
                             <span class="d-none d-lg-block ms-auto">
-                                <a href="./asset/file/resume.pdf" download>
+                                <a href="./asset/file/Resume_Rapeepong.pdf" download>
                                     <span class="material-symbols-outlined icon-web icon-download pointer">
                                         file_download
                                     </span>
@@ -41,7 +41,7 @@
                         <div class="career pb-1 d-flex align-items-end">
                             Software Developer
                             <span class="ms-auto d-inline d-lg-none me-3">
-                                    <a href="./asset/file/resume.pdf" download class="">
+                                    <a href="./asset/file/Resume_Rapeepong.pdf" download class="">
                                         <span class="material-symbols-outlined icon-web icon-download pointer" >
                                             file_download
                                         </span>
@@ -576,6 +576,7 @@
     });
     }
     if(!detectMob()){
+        setTimeout(() => {
             VANTA.NET({
             el: "#bg",
             mouseControls: true,
@@ -590,6 +591,8 @@
             points: 8.00,
             spacing: 18.00
         })
+        },0);
+        
     }
     </script>
 </body>

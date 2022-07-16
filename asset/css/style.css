@@ -10,12 +10,12 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
-body {
+#bg {
   background: linear-gradient(
     322deg,
     rgba(143, 143, 143, 1) 0%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ) !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
