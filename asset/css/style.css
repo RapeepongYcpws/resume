@@ -1,4 +1,4 @@
-* {
+*:not(span.icon-web) {
   font-family: MyFont !important;
 }
 @font-face {
@@ -36,7 +36,7 @@ body {
 }
 .header-tab .name,
 .header-tab .career {
-  padding: 0px 45px 0px 240px;
+  padding: 0px 5px 0px 240px;
   font-size: 2.5rem;
 }
 .header-tab .name {
@@ -44,6 +44,16 @@ body {
 }
 .header-tab .career {
   font-weight: 400;
+}
+span .icon-download {
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #413e41;
+}
+
+span .icon-download:hover {
+  transform: translateY(-4px);
 }
 
 .image-profile-wrapper {
@@ -273,7 +283,7 @@ body {
   .header-tab .name,
   .header-tab .career {
     padding: 0px 0px 0px 110px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .image-profile-wrapper {
     width: 120px;
@@ -303,6 +313,14 @@ body {
   .left-column .body-title:last-child {
     border-bottom: none;
   }
+  span .icon-download {
+    font-size: 28px;
+    transform: translateY(4px);
+  }
+  span .icon-download:hover {
+    transform: scale(100%);
+    transform: translateY(4px);
+  }
 }
 @media screen and (min-width: 1400px) {
   .header-tab .career::after {
@@ -316,6 +334,7 @@ body {
     content: "";
   }
   .header-tab .name {
+    padding: 0px 45px 0px 240px;
     font-size: 3em;
   }
   .header-tab .career {
