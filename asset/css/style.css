@@ -18,6 +18,8 @@ body {
   ) !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
+  height: 100%;
 }
 :root {
   --tcolor: #f7d459;
